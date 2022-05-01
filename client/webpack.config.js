@@ -34,6 +34,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'Text Editor',
+        display: "standalone",
         short_name: 'Editor',
         description: 'Just Another Text Editor',
         background_color: '#272822',

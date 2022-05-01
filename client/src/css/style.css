@@ -209,3 +209,9 @@ h1 {
     font-size: 18px;
   }
 }
+
+@media all and (display-mode: standalone) {
+  #buttonInstall {
+    display: none;
+  }
+}
