@@ -65,15 +65,3 @@ registerRoute(
     ],
   }),
 );
-
-
-// fetch event of service worker
-self.addEventListener('fetch', event => {
-  // everytime there is a fetch request, see if what we are after is in the cache
-  event.respondWith(  
-    caches.match(event.request).then(cacheResponse => {
-      // if the asset is in the cache return it OR continue the fetch to the server
-      return cacheResponse || fetch(event.request);
-    })
-  )
-})
