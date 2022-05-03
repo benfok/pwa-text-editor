@@ -72,6 +72,8 @@ View the repository in [GitHub](https://github.com/benfok/pwa-text-editor)
 
 ## Details and Learnings
 - This was a challenging application to build as while the dependencies helped make some code syntax simplier, they made troubleshooting much more difficult.
-- Added a css rule to remove the Install button if the application was being viewed in `display: standalone` i.e. installed.
+- On initial load the application first checks for existing data within IndexedDB, then localStorage and then if neither, displays the default header artwork.
+- Images, the home page, scripts and styles are cached to improve performance and for offline use. 
+- Added css rules to remove the Install button if the application was being viewed in `display: standalone` (i.e. installed) and also to override the default CodeMirror wondow sizing to ensure the viewable code window takes up the full viewport height.
  
 
